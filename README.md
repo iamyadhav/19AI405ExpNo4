@@ -1,11 +1,11 @@
 <h1>ExpNo 4 : Implement A* search algorithm for a Graph</h1> 
 <h3>Name: Yadhav GP</h3>
-<h3>Register Number:212223230247</h3>
+<h3>Register Number: 212223230247</h3>
 <H3>Aim:</H3>
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
 
-``````
+```python
 // A* Search Algorithm
 1.  Initialize the open list
 2.  Initialize the closed list
@@ -48,9 +48,10 @@
     e) push q on the closed list
     end (while loop)
 
-``````
-<H3>Program:</H3>
-`````
+```
+<h2>PROGRAM :</h2>
+
+```python
 from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
@@ -60,8 +61,11 @@ def aStarAlgo(start_node, stop_node):
     parents = {}         # parents contains an adjacency map of all nodes
     #distance of starting node from itself is zero
     g[start_node] = 0
-#start_node is root node i.e it has no parent nodes
-#so start_node is set to its own parent node
+```
+
+```python
+# start_node is root node i.e it has no parent nodes
+# so start_node is set to its own parent node
 
 parents[start_node] = start_node
 while len(open_set) > 0:
@@ -114,8 +118,9 @@ while len(open_set) > 0:
     closed_set.add(n)
 print('Path does not exist!')
 return None
+```
 
-
+```python
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
@@ -152,8 +157,7 @@ print(H_dist)
 Graph_nodes=graph
 print(graph)
 aStarAlgo('S', 'G')
-`````
-
+```
 <hr>
 <h2>Sample Graph I</h2>
 <hr>
@@ -221,3 +225,6 @@ G 0 <br>
 <h2>Sample Output</h2>
 <hr>
 Path found: ['A', 'E', 'D', 'G']
+
+<h2>RESULT :</h2>
+Implementing A * Search algorithm for a Graph using Python 3. is executed successfully.
